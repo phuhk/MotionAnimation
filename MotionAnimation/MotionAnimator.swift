@@ -13,7 +13,7 @@ public protocol MotionAnimatorObserver{
 }
 
 open class MotionAnimator: NSObject {
-  static let sharedInstance = MotionAnimator()
+  public static let sharedInstance = MotionAnimator()
   var updateObservers:[MotionAnimationObserverKey:Weak<MotionAnimatorObserver>] = [:]
 
   open var debugEnabled = false
